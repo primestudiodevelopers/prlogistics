@@ -1,0 +1,23 @@
+{
+  "name": "pr-global-logistics",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "postinstall": "node -e \"const fs=require('fs');const p='node_modules/rollup/dist/native.js';if(fs.existsSync(p)){fs.writeFileSync(p,'module.exports=require(\\\"@rollup/wasm-node/dist/native.js\\\");\\\\n');}\"",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "gsap": "^3.12.5",
+    "lucide-react": "^0.460.0"
+  },
+  "devDependencies": {
+    "@rollup/wasm-node": "^4.24.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11"
+  }
+}
